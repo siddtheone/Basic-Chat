@@ -1,0 +1,8 @@
+.chatText {
+  width: 100%;
+  display: flex;
+  margin: 10px 0px;
+}
+.selfChatText {
+  text-align: right;
+}

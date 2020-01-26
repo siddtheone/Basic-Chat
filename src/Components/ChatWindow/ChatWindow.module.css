@@ -1,0 +1,10 @@
+.chatWindow {
+  border: 1px solid black;
+  margin: 5px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}

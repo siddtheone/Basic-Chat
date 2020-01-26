@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Baumans', sans-serif;
+}
+
+.App {
+  padding: 5px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  font-family: 'Baumans', sans-serif;
+}
