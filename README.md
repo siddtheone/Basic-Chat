@@ -1,3 +1,31 @@
+# This project is a basic chat application.
+
+## Chat Page:
+
+- [x] It contains a chat message box, where the sent messages are floating right and the received messages are floating left. The message contains
+the text of the message, date time (optional) and the user name if it is not the current user.
+- [x] There is a text input field and a send button at the bottom of the page.
+- [ ] ~~If the user is on another tab and he/she gets a message, the chat tab will blink, until he doesn’t read the message.~~
+
+## Settings
+- [x] User name
+- [ ] Interface color
+- [x] Clock Display
+- [x] Send messages on CTRL+ENTER
+- [x] All settings should be saved in local storage and there must be a button “Reset to defaults”, by clicking on it application should fallback to default settings.
+
+## Requirements
+- [x] You have to use one popular javascript framework.
+- [x] You have to use ~~css preprocessors~~. [Done with CSS Modules]
+- [x] You have to write the app in ES6 or ~~TypeScript~~.
+- [x] It should work on every desktop and phone, so you have to make responsive design. And it has to work both portrait and landscape
+orientation.
+- [x] We like the clean, commented, small and modularized codes. [Please review and share your inputs on same]
+- [x] Working code, that works if we serve it with the http server and open in a browser.
+- [x] Readme file that contains what is it, how does it work and how could we setup.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
