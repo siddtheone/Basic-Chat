@@ -11,7 +11,7 @@ class HomePage extends React.Component {
 
   onKeyPress = e => {
     const {isShortCut} = this.props;
-    if(isShortCut && e.ctrlKey && e.key === '↵') {
+    if(isShortCut === "true" && e.ctrlKey && (['Enter', '\n'].indexOf(e.key) > -1)) {
       this.onSubmit();
     }
   }

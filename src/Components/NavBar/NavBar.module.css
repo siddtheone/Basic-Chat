@@ -3,8 +3,18 @@
   display: flex;
   border: 1px solid black;
   padding: 10px 0;
+  font-size: 20px;
+}
+.navbar a {
+  text-decoration: none;
 }
 .navItems {
   cursor: pointer;
   margin: 0 15px;
+  color: black;
+  padding: 10px;
+}
+.navActive {
+  font-weight: bold;
+  border-bottom: 2px solid black;
 }

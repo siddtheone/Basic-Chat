@@ -11,9 +11,11 @@ function ChatText({
   }
   return (
     <div className={classes.join(' ')}>
-      {!isSelf && <span>{message.username}, </span>}
-      <time>{message.date}</time>
-      <div>{message.message}</div>
+      <div>
+        {!isSelf && <span>{message.username}, </span>}
+        <time>{message.date}</time>
+      </div>
+      <div className={styles.text}>{message.message}</div>
     </div>
   )
 }

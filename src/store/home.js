@@ -1,4 +1,5 @@
 import {v4} from 'uuid';
+import socketIOClient from 'socket.io-client';
 import {SOCKET} from '../constants';
 import {createAction} from '../helpers/actionHelper';
 
@@ -16,12 +17,22 @@ export const initialState = {
   unread: 0,
 };
 
+export const getConnect = () => {
+  return dispatch => {
+    const ENDPOINT = 'http://127.0.0.1:4001';
+    const SOCKET = socketIOClient(ENDPOINT);
+    SOCKET.on('message', m => {
+      dispatch(addMessage(m))
+    });
+  }
+};
+
 export const sendMessage = (message, username) => {
   return dispatch => {
     const toSend = {
       date: new Date().getTime(),
       chatId: v4(),
-      username,
+      username: username ? username : 'UNKNOWN',
       message
     }
     SOCKET.emit("message", toSend);

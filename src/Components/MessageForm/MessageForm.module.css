@@ -1,3 +1,16 @@
 .messageForm {
   margin: 5px 0;
+  display: flex;
+}
+.messageInput {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 20px;
+}
+.messageSubmit {
+  background: none;
+  border: 1px solid black;
+  padding: 5px 10px;
 }

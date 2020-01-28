@@ -4,7 +4,6 @@
   flex-grow: 1;
   overflow-y: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
   padding: 20px;
 }

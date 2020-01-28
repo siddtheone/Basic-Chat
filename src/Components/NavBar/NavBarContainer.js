@@ -1,6 +1,8 @@
 import { connect } from "react-redux";
 import NavBar from './NavBar';
+import {withRouter} from 'react-router-dom';
 import {
+  getConnect,
   changeHome,
   addMessage,
 } from '../../store/home';
@@ -8,12 +10,14 @@ import {
 const mapStateToProps = state => {
   return {
     unread: state.home.unread,
+    isLight: state.settings.isLight,
   }
 };
 
 const mapDispatchToProps = {
+  getConnect,
   changeHome,
   addMessage,
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NavBar));

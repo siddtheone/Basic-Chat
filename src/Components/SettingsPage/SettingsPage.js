@@ -26,7 +26,7 @@ class SettingsPage extends React.Component {
             <div><input onChange={this.onChange('userName')} value={userName} /></div>
           </div>
           <div className={styles.formRow}>
-            <div className={styles.fieldHeader}>Interface color</div>
+            <div className={styles.fieldHeader}>Interface color [EXPERIMENTAL]</div>
             <div>
               <label htmlFor="indoor">
                 <input
@@ -83,7 +83,7 @@ class SettingsPage extends React.Component {
             </div>
           </div>
           <div className={styles.formRow}>
-            <div className={styles.fieldHeader}><label htmlFor="language">Language</label></div>
+            <div className={styles.fieldHeader}><label htmlFor="language">Language [EXPERIMENTAL]</label></div>
             <div>
               <select id="language" value={language} onChange={this.onChange('language')}>
                 <option value="English">English</option>
