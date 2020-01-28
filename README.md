@@ -9,7 +9,7 @@ the text of the message, date time (optional) and the user name if it is not the
 
 ## Settings
 - [x] User name
-- [ ] Interface color
+- [ ] ~~Interface color~~
 - [x] Clock Display
 - [x] Send messages on CTRL+ENTER
 - [x] All settings should be saved in local storage and there must be a button “Reset to defaults”, by clicking on it application should fallback to default settings.
